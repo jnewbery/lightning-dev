@@ -30,3 +30,12 @@
 
 # Debug files
 *.dSYM/
+*.swp
+
+# Vagrant files
+.vagrant*
+guest_logs/
+
+# misc
+.DS_Store
+.idea/
