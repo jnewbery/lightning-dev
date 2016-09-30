@@ -88,10 +88,17 @@ cd protobuf-c-1.1.1
 ./configure && make && make install
 
 # Get and build lightning
+#echo_log "Get and install lightning"
+#cd ~vagrant
+#sudo -u vagrant -H git clone https://github.com/ElementsProject/lightning.git
+#cd lightning
+#sudo -u vagrant -H make
+
+# Build lightning
 echo_log "Get and install lightning"
-cd ~vagrant
-sudo -u vagrant -H git clone https://github.com/ElementsProject/lightning.git
-cd lightning
+sudo -u vagrant -H ln -s ~vagrant/lightning /vagrant_lightning
+cd ~vagrant/lightning
+sudo -u vagrant -H make clean
 sudo -u vagrant -H make
 
 # add blockchain tools to path
