@@ -1,4 +1,4 @@
-# rods
+# lightning-dev
 
 Virtual machine configuration for development environment for [lightning](https://github.com/ElementsProject/lightning).
 
